@@ -1,5 +1,36 @@
-//profile-title: roomi base64:yrfhtYPKs+G1luOAmOKss/CThILwk4aD4p+/44CZyrfhtYPKs+G1lg==
-//profile-update-interval: 1
-//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
-//last update on: 2024-06-18 02:49:55
-warp://162.159.195.130:4233?ifp=10-20&ifps=20-60&ifpd=5-10#ایران🇮🇷&&detour=warp://162.159.192.132:8319?ifp=10-20&ifps=20-60&ifpd=5-10#آلمان🇩🇪WoW
+{
+  "outbounds": 
+  [
+    {
+      "type": "wireguard",
+      "tag": "Warp-IR",
+      "local_address": [
+        "172.16.0.2/32",
+        "2606:4700:110:897f:a8d8:9aff:c9f1:3a55/128"
+      ],
+      "private_key": "8NMCByJQGIl/vlC/tyOZRW+9FLjPp8RNsLkwhkpwNm8=",
+      "server": "162.159.192.1",
+      "server_port": 1701,
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "reserved": [82,240,215],
+      "mtu": 1280,
+      "fake_packets": "5-10"
+    },
+    {
+      "type": "wireguard",
+      "tag": "Warp-Main",
+      "detour": "Warp-IR",
+      "local_address": [
+        "172.16.0.2/32",
+        "2606:4700:110:8971:625c:41d8:f8bd:a24/128"
+      ],
+      "private_key": "IEQTlQaSJT3QMBXEvrXMQScoBl4uakLczwh9BPwmKmM=",
+      "server": "162.159.192.10",
+      "server_port": 1701,
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "reserved": [170,24,226],
+      "mtu": 1280,
+      "fake_packets": "5-10"
+    }
+  ]
+}
